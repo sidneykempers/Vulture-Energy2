@@ -9,9 +9,10 @@
             die("Connection failed: "  . $conn->connect_error);
         }
         // stap 2, 3 en 4 
-        $sql = "SELECT * FROM evenementen WHERE evenement_id=".$_GET['id'];
+        $sql = "SELECT * FROM evenementen LEFT JOIN artiesten ON evenementen.artiest_id = artiesten.artiest_id LEFT JOIN locaties ON evenementen.locatie_id = locaties.locatie_id WHERE evenement_id=".$_GET['id'];
         if($result = $conn->query($sql)) {
             $row = $result->fetch_row();
+        }
            ?>
 
 <!DOCTYPE html>
@@ -72,11 +73,8 @@
                  <h1><b>Locatie:</b></h1>
                  <br>
                   <?php
-                   $sql = "SELECT * FROM locaties";
-                   if($result = $conn->query($sql)) {
-                       $row = $result->fetch_row(); 
-                       echo $row[2]."<br>". $row[1];
-                  }
+                       echo $row[15]."<br>". $row[16];
+                  
                   ?>
                 </p>
             </article>
@@ -85,11 +83,9 @@
                 <h1>Artiest:</h1>
                 <p>
                   <?php
-                    $sql = "SELECT * FROM artiesten";
-                    if($result = $conn->query($sql)) {
-                        $row = $result->fetch_row(); 
-                        echo $row[1];
-                      }
+          
+                        echo $row[7];
+                      
                   ?>                              
                 </p>
                     </article>
@@ -98,28 +94,18 @@
             <h1><b>Datum & Tijd</b></h1>
                 
                   <?php
-                    $sql = "SELECT * FROM evenementen";
-                    if($result = $conn->query($sql)) {
-                        $row = $result->fetch_row(); 
                         echo $row[1];
-                      }
                   ?>
                  <br> <br> 
                  <h1><b>Locatie:</b></h1>
                  <br>
                   <?php
-                   $sql = "SELECT * FROM locaties";
-                   if($result = $conn->query($sql)) {
-                       $row = $result->fetch_row(); 
-                       echo $row[2]."<br>". $row[1];
-                  }
+                       echo $row[15]."<br>". $row[16];
+                  
                   ?>
                   <h1>Artiest:</h1>
                   <?php
-                    $sql = "SELECT * FROM artiesten";
-                    if($result = $conn->query($sql)) {
-                        $row = $result->fetch_row(); 
-                        echo $row[1];
+                        echo $row[7];
                       }
                   ?>
             </articcle>
