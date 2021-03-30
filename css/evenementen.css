@@ -19,7 +19,9 @@ body {
 		background-color: black;
 	}
 	
-
+.item-bigscreen {
+  display: none;
+}
 	
 	/*hamburger menu mobile*/
 
@@ -43,9 +45,12 @@ body {
 details > summary::-webkit-details-marker {
   display: none;
 }
-
-    /*hamburger menu mobile*/
-	
+.item-foto {
+  height: 200px;
+  width: 95%;
+  position: absolute;
+  left: 2.5vw;
+  top: 15vh;
 }
 
 @media screen and (min-width:769px) {
@@ -56,7 +61,9 @@ details > summary::-webkit-details-marker {
 	.item-navigatie {
 		display: none;
 	}
-	
+	.item-mobile {
+    display: none;
+  }
 	
 	/*begin navbar*/
     header {
