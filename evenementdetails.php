@@ -9,7 +9,10 @@
             die("Connection failed: "  . $conn->connect_error);
         }
         // stap 2, 3 en 4 
-        $sql = "SELECT * FROM evenementen LEFT JOIN artiesten ON evenementen.artiest_id = artiesten.artiest_id LEFT JOIN locaties ON evenementen.locatie_id = locaties.locatie_id WHERE evenement_id=".$_GET['id'];
+        $sql = "SELECT * FROM evenementen 
+        LEFT JOIN artiesten ON evenementen.artiest_id = artiesten.artiest_id 
+        LEFT JOIN locaties ON evenementen.locatie_id = locaties.locatie_id 
+        WHERE evenement_id=".$_GET['id'];
         if($result = $conn->query($sql)) {
             $row = $result->fetch_row();
         }
@@ -106,7 +109,7 @@
                   <h1>Artiest:</h1>
                   <?php
                         echo $row[7];
-                      }
+                      
                   ?>
             </articcle>
             </section>
@@ -118,7 +121,7 @@
 <?php      
               
             $result->close();
-        }
+        
         // stap 5
         $conn->close();
     

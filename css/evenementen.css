@@ -81,6 +81,10 @@ text-align: center;
 	.item-mobile {
     display: none;
   }
+
+  .item-mobile-info {
+    display: none;
+  }
 	
 	/*begin navbar*/
     header {
