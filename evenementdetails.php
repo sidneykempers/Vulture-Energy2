@@ -74,7 +74,7 @@
                    if($result = $conn->query($sql)) {
                        $row = $result->fetch_row(); 
                        echo $row[2]."<br>". $row[1];
-                   }
+                  }
                   ?>
                 </p>
             </article>
