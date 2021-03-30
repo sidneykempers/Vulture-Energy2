@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:#B8BCBC;
+    
+    
+}
+
+details summary { list-style-type: none; }     /* Firefox /
+
+details summary::-webkit-details-marker { display: none; } / Chrome */
+
+ details summary::marker { display: none; }
+ summary {
+  display: block;
+}
+
+summary::marker {
+  display: none;
+}
+@media screen and (min-width:100px) and (max-width:768.9px) {
+	.item-navbar {
+		display: none;
+	}
+	
+	header {
+		background-color: black;
+	}
+	
+
+	
+	/*hamburger menu mobile*/
+
+    .item-hamburger {
+        font-size: 1.5rem;
+    }
+
+    .item-hamburger summary {list-style-type: none;}
+    .item-hamburger summary {color: #B8BCBC;}
+
+    .item-hamburger h1 {position: fixed; right: 5vw; top: 1vh;}
+    .item-hamburger ul {z-index: 2;}
+
+    .item-navigatie {position: fixed; right: 5vw; top: 10vh;}
+
+    .item-navigatie ul { list-style: none; }
+    .item-navigatie li {padding: 1vw; background-color:black; list-style: none;}
+    .item-navigatie a {text-decoration: none; color: #B8BCBC;}
+
+
+    details > summary::-webkit-details-marker {
+      display: none;
+    }
+    /*hamburger menu mobile*/
+}
+
+@media screen and (min-width:769px) {
+  .item-mobile {
+    display: none;
+  }
+  .item-navigatie {
+    display: none;
+  }
+  .item-hamburger {
+    display: none;
+  }
+	/*begin navbar*/
+    header {
+        background-color: black;
+    }
+
+    .item-navbar ul {
+          list-style-type: none;
+        position: absolute;
+        top: 3vh;
+        left: 19vw;
+    }
+
+    .item-navbar li {
+            display: inline;
+          float: left;
+
+    }
+    .item-navbar li a {
+
+        font-size: 35px;
+        color: white;
+        text-align: center;
+        padding:20px; 
+        text-decoration: none;
+    }
+    .item-navbar a:hover {
+        color:#740715;
+    }
+
+    .item-logo {
+        margin-left: 5vw;
+        margin-top: -2vh;
+    }  /*einde navbar */
+
+    .column {
+        float: left;
+        width: 32.2%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+      
+      
+      
+      
+      /* Add some shadows to create a card effect */
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+      
+      /* Some left and right padding inside the container */
+      .container {
+        padding: 0 16px;
+      }
+      
+      /* Clear floats */
+      .container::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      
+      .title {
+        color: rgb(255, 255, 255);
+      }
+      
+      .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: #ffffff;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+      }
+      
+      .button:hover {
+        background-color: #740715;
+      }
+      #myCanvas2 {
+        position: absolute;
+        margin-left: 75vw;
+        margin-top: 10vh;
+      }
+      #myCanvas {
+        position: absolute;
+        margin-left: 12vw;
+        margin-top: 10vh;
+      }
+      #item-strawberry {
+        position: absolute;
+        margin-left: 36vw;
+        margin-top: 10vh;
+      }
+      .shadow {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+      .item-blikjes {
+        position: absolute;
+        top: 130vh;
+        padding: 10vw;
+        
+      }
+}

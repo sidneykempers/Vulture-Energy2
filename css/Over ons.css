@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:#B8BCBC;
+    
+    
+}
+@media screen and (min-width:100px) and (max-width:768.9px) {
+	
+	
+}
+
+@media screen and (min-width:769px) {
+	/*begin navbar*/
+    header {
+        background-color: black;
+    }
+	
+    .item-navbar ul {
+          list-style-type: none;
+        position: absolute;
+        top: 3vh;
+        left: 19vw;
+    }
+
+    .item-navbar li {
+            display: inline;
+          float: left;
+
+    }
+    .item-navbar li a {
+        
+        font-size: 35px;
+        color: white;
+        text-align: center;
+        padding:20px; 
+        text-decoration: none;
+    }
+    .item-navbar a:hover {
+        color:#740715;
+    }
+    
+    .item-logo {
+        margin-left: 5vw;
+    }/*einde navbar */
+}
