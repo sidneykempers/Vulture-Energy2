@@ -63,12 +63,14 @@
             <img class="item-foto" src="images/<?php echo $row[5];?>.jpg" alt="afbeelding van het evenement" height="700px" width="1200px";>
 
             <article class="item-tijd">
-                <h1>Datum & Tijd<h1>
+                <h1><b>Datum & Tijd</b></h1>
                 <p>
                   <?php
                     echo $row[1];
                   ?>
-                 <br> <br> <b>Locatie:</b><br>
+                 <br> <br> 
+                 <h1><b>Locatie:</b></h1>
+                 <br>
                   <?php
                    $sql = "SELECT * FROM locaties";
                    if($result = $conn->query($sql)) {
@@ -80,7 +82,7 @@
             </article>
 
             <article class="item-artiest">
-                <h1>Artiest:<h1>
+                <h1>Artiest:</h1>
                 <p>
                   <?php
                     $sql = "SELECT * FROM artiesten";
@@ -90,7 +92,37 @@
                       }
                   ?>                              
                 </p>
-            </article>
+                    </article>
+
+          <article class="item-mobile-info">
+            <h1><b>Datum & Tijd</b></h1>
+                
+                  <?php
+                    $sql = "SELECT * FROM evenementen";
+                    if($result = $conn->query($sql)) {
+                        $row = $result->fetch_row(); 
+                        echo $row[1];
+                      }
+                  ?>
+                 <br> <br> 
+                 <h1><b>Locatie:</b></h1>
+                 <br>
+                  <?php
+                   $sql = "SELECT * FROM locaties";
+                   if($result = $conn->query($sql)) {
+                       $row = $result->fetch_row(); 
+                       echo $row[2]."<br>". $row[1];
+                  }
+                  ?>
+                  <h1>Artiest:</h1>
+                  <?php
+                    $sql = "SELECT * FROM artiesten";
+                    if($result = $conn->query($sql)) {
+                        $row = $result->fetch_row(); 
+                        echo $row[1];
+                      }
+                  ?>
+            </articcle>
             </section>
        
       
