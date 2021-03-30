@@ -98,8 +98,11 @@ details > summary::-webkit-details-marker {
 		left: 30vw; 
 		top: 18vh;
 		height: 400px;
-		width: 750px;;
+		width: 750px;
+    border: 2px solid black;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
 	}
+  
 
 	.item-tijd {
 		position: absolute;
