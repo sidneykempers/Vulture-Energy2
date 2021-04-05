@@ -10,63 +10,53 @@ body {
 }
 
 @media screen and (min-width:100px) and (max-width:768.9px) {
+  .item-navbar {
+		display: none;
+	}
+	
+	header {
+		background-color: black;
+	}
+	
+.item-bigscreen {
+  display: none;
+}
+	
+	/*hamburger menu mobile*/
 
-  .item-navbar{
-    display: none;
-  }
+.item-hamburger {
+	font-size: 1.5rem;
+}
 
-  .item-hamburger {
-    font-size: 1.5rem;
-  }
+.item-hamburger summary {list-style-type: none;}
+.item-hamburger summary {color: #B8BCBC;}
 
-  .item-navigatie li{
-    display: none;
-  }
+.item-hamburger h1 {position: fixed; right: 5vw; top: 1vh;}
+.item-hamburger ul {z-index: 2;}
 
-  .item-hamburger summary {
-    list-style-image: none;
-  }
+.item-navigatie {position: fixed; right: 5vw; top: 10vh;}
 
-  .item-hamburger summary {
-    color: #B8BCBC;
-  }
+.item-navigatie ul { list-style: none; }
+.item-navigatie li {padding: 1vw; background-color:black; list-style: none;}
+.item-navigatie a {text-decoration: none; color: #B8BCBC;}
 
-  .item-hamburger h1 {
-    position: fixed; right: 5vw; top: 1vh;
-  }
 
-  .item-navigatie {
-    position: fixed; right: 5vw; top: 10vh;
-  }
-
-  .item-navigatie ul {
-    list-style: none;
-  }
-
-  .item-navigatie li {
-    padding: 1vw; background-color:black; list-style: none;
-  }
-
-  .item-navigatie a {
-    text-decoration: none; color: #B8BCBC;
-  }
-
-  details > summary::-webkit-details-marker {
-    display: none;
-  }
+details > summary::-webkit-details-marker {
+  display: none;
+}
 
   .afbeelding img{
     position: absolute;
     left: 10px;
     width: 90vw;
-    height: 100px;
+    height: 300px;
   }
 
-  h1{
+  .item-tekst{
     position: absolute;
-    left: 35px;
-    top: 420px;
-    font-size: 20px;
+    left: 5vw;
+    top: 60vh;
+    
   }
 }
 
