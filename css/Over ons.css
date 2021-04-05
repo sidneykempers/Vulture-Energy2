@@ -113,16 +113,17 @@ body {
 
   .afbeelding img {
     position: absolute;
-    margin-left: 40px;
+    left: 4vw;
     width: 90%;
-    height: 300px;
+    height: 500px;
   }
 
-  h1{
+  .item-tekst{
     position: absolute;
-    left: 35px;
-    top: 420px;
+    left: 35vw;
+    top: 60vh;
     font-size: 20px;
+    text-align: center;
   }
 }
 
