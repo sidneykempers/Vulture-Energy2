@@ -10,10 +10,9 @@ body {
     
     
 }
+details summary { list-style-type: none; }     /* Firefox */
 
-details summary { list-style-type: none; }     /* Firefox /
-
-details summary::-webkit-details-marker { display: none; } / Chrome */
+details summary::-webkit-details-marker { display: none; } /* Chrome */
 
  details summary::marker { display: none; }
  summary {
@@ -24,14 +23,82 @@ summary::marker {
   display: none;
 }
 @media screen and (min-width:100px) and (max-width:768.9px) {
-	.item-navbar {
+  #item-strawberry {
+    display: none;
+  }
+  .column {
+    float: left;
+    width: 94%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  
+  
+  
+  /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: rgb(255, 255, 255);
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: #ffffff;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #740715;
+  }
+  .item-blikjes {
+    display: flex;
+    flex-direction: column;
+  }
+  .item-blikjes img {
+    height: 250px;
+    width: 345px;
+    margin-left: 1vw;
+    border: 2px solid gray;
+  }
+  #myCanvas {
+    display: none;
+  }
+  #myCanvas2 {
+    display: none;
+  }
+  .item-navbar {
 		display: none;
 	}
 	
 	header {
 		background-color: black;
 	}
-	
+	header img {
+    height: 60px;
+    width: 60px;
+  }
 
 	
 	/*hamburger menu mobile*/
@@ -41,17 +108,17 @@ summary::marker {
     }
 
     .item-hamburger summary {list-style-type: none;}
-    .item-hamburger summary {color: #B8BCBC;}
-
+	.item-hamburger summary {color: #B8BCBC;}
+  
     .item-hamburger h1 {position: fixed; right: 5vw; top: 1vh;}
-    .item-hamburger ul {z-index: 2;}
+	.item-hamburger ul {z-index: 2;}
 
     .item-navigatie {position: fixed; right: 5vw; top: 10vh;}
 
-    .item-navigatie ul { list-style: none; }
+	.item-navigatie ul { list-style: none; }
     .item-navigatie li {padding: 1vw; background-color:black; list-style: none;}
     .item-navigatie a {text-decoration: none; color: #B8BCBC;}
-
+   
 
     details > summary::-webkit-details-marker {
       display: none;
@@ -60,6 +127,7 @@ summary::marker {
 }
 
 @media screen and (min-width:769px) {
+ 
   .item-mobile {
     display: none;
   }
@@ -73,7 +141,7 @@ summary::marker {
     header {
         background-color: black;
     }
-
+   
     .item-navbar ul {
           list-style-type: none;
         position: absolute;
@@ -102,7 +170,6 @@ summary::marker {
         margin-left: 5vw;
         margin-top: -2vh;
     }  /*einde navbar */
-
     .column {
         float: left;
         width: 32.2%;
@@ -173,4 +240,6 @@ summary::marker {
         padding: 10vw;
         
       }
+      
+      
 }
