@@ -6,46 +6,127 @@
     padding: 0;
 }
 body {
-    background-color:#B8BCBC;
-    
-    
+  background-color:#B8BCBC;
 }
+
 @media screen and (min-width:100px) and (max-width:768.9px) {
-	
-	
+
+  .item-navbar{
+    display: none;
+  }
+
+  .item-hamburger {
+    font-size: 1.5rem;
+  }
+
+  .item-navigatie li{
+    display: none;
+  }
+
+  .item-hamburger summary {
+    list-style-image: none;
+  }
+
+  .item-hamburger summary {
+    color: #B8BCBC;
+  }
+
+  .item-hamburger h1 {
+    position: fixed; right: 5vw; top: 1vh;
+  }
+
+  .item-navigatie {
+    position: fixed; right: 5vw; top: 10vh;
+  }
+
+  .item-navigatie ul {
+    list-style: none;
+  }
+
+  .item-navigatie li {
+    padding: 1vw; background-color:black; list-style: none;
+  }
+
+  .item-navigatie a {
+    text-decoration: none; color: #B8BCBC;
+  }
+
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .afbeelding img{
+    position: absolute;
+    left: 10px;
+    width: 90vw;
+    height: 100px;
+  }
+
+  h1{
+    position: absolute;
+    left: 35px;
+    top: 420px;
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width:769px) {
-	/*begin navbar*/
-    header {
-        background-color: black;
-    }
-	
-    .item-navbar ul {
-          list-style-type: none;
-        position: absolute;
-        top: 3vh;
-        left: 19vw;
-    }
-
-    .item-navbar li {
-            display: inline;
-          float: left;
-
-    }
-    .item-navbar li a {
-        
-        font-size: 35px;
-        color: white;
-        text-align: center;
-        padding:20px; 
-        text-decoration: none;
-    }
-    .item-navbar a:hover {
-        color:#740715;
-    }
+	.item-hamburger {
+    display: none;
+  }
     
-    .item-logo {
-        margin-left: 5vw;
-    }/*einde navbar */
+  .item-navigatie {
+    display: none;
+  }
+
+  /*begin navbar*/
+  header {
+    background-color: black;
+  }
+	
+  .item-navbar ul {
+    list-style-type: none;
+    position: absolute;
+    top: 3vh;
+    left: 19vw;
+  }
+
+  .item-navbar li {
+    display: inline;
+    float: left;
+  }
+
+  .item-navbar li a {
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    padding:20px; 
+    text-decoration: none;
+  }
+  .item-navbar a:hover {
+    color:#740715;
+  }
+    
+  .item-logo {
+    margin-left: 5vw;
+  }
+
+  .afbeelding img {
+    position: absolute;
+    margin-left: 40px;
+    width: 90%;
+    height: 300px;
+  }
+
+  h1{
+    position: absolute;
+    left: 35px;
+    top: 420px;
+    font-size: 20px;
+  }
 }
+
+
+
+
+
