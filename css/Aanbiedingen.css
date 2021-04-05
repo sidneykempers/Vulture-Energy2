@@ -11,30 +11,61 @@ body {
     
 }
 @media screen and (min-width:100px) and (max-width:768.9px) {
-	
+	.item-hamburger{
+        display:none ;
+    }
+    .item-hamburger {
+        font-size: 1.5rem;
+    }
+
+    .item-navigatie li{
+        display: none;
+    }
+
+    .item-hamburger summary {list-style-image: none;}
+    .item-hamburger summary {color: #B8BCBC;}
+    .item-hamburger h1 {position: fixed; right: 5vw; top: 1vh;}
+
+    .item-navigatie {position: fixed; right: 5vw; top: 10vh;}
+
+    .item-navigatie ul { list-style: none;}
+    .item-navigatie li {padding: 1vw; background-color:black; list-style: none;}
+    .item-navigatie a {text-decoration: none; color: #B8BCBC;}
+
+
+    details > summary::-webkit-details-marker {
+      display: none;
+    }
 	
 }
 
 @media screen and (min-width:769px) {
-	/*begin navbar*/
+	.item-hamburger {
+        display: none;
+    }
+    
+    .item-navigatie {
+        display: none;
+    }
+
+    /*begin navbar*/
     header {
         background-color: black;
     }
 	
     .item-navbar ul {
-          list-style-type: none;
+        list-style-type: none;
         position: absolute;
         top: 3vh;
         left: 19vw;
     }
 
     .item-navbar li {
-            display: inline;
-          float: left;
-
+        display: inline;
+        float: left;
     }
+
     .item-navbar li a {
-        
         font-size: 35px;
         color: white;
         text-align: center;
@@ -47,5 +78,77 @@ body {
     
     .item-logo {
         margin-left: 5vw;
-    }/*einde navbar */
+    }
+
+    
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+        position: relative;
+        width: 45%;
+        top: 1vh;
+        left: 15vw;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+        cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev,.next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    /* Container for image text */
+    .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    
 }
