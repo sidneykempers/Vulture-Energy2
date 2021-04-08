@@ -18,7 +18,7 @@
         <nav class="item-navbar">
             <ul>
                        <li><a href="Producten.html">Producten</a></li>
-                       <li><a href="Aanbiedingen.html">Aanbiedingen</a></li>
+                       <li><a href="Aanbiedingen.php">Aanbiedingen</a></li>
                        <li><a href="Artiesten.html">Artiesten</a></li>
                        <li><a href="Over ons.html">Over ons</a></li>
                        <li><a href="Contact.html">Contact</a></li>
@@ -33,7 +33,7 @@
                 <li><a href="Homepage.php">Homepage</a></li>
                 <li><a href="Producten.html">producten</a></li>
                 <li><a href="Artiesten.html">Artiesten</a></li>
-                <li><a href="Aanbiedingen.html">Aanbiedingen</a></li>
+                <li><a href="Aanbiedingen.php">Aanbiedingen</a></li>
                 <li><a href="Over ons.html">Over ons</a></li>
                 <li><a href="Contact.html">Contact</a></li>
              </ul>

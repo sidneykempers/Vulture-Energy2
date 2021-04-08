@@ -39,92 +39,42 @@ body {
       display: none;
     }
 	
-    /* begin slideshow */
-		/* Position the image container (needed to position the left and right arrows) */
-		.container {
-            position: relative;
-              width: 80%;
-              top: 1vh;
-              left: 10vw;
-          }
+    /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
   
-          /* Hide the images by default */
-          .mySlides {
-            display: none;
-          }
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+  }
   
-          /* Add a pointer when hovering over the thumbnail images */
-          .cursor {
-            cursor: pointer;
-          }
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
   
-          /* Next & previous buttons */
-          .prev,.next {
-            cursor: pointer;
-            position: absolute;
-            top: 40%;
-            width: auto;
-            padding: 16px;
-            margin-top: -50px;
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            -webkit-user-select: none;
-          }
+  .title {
+    color: rgb(255, 255, 255);
+  }
   
-          /* Position the "next button" to the right */
-          .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-          }
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: #ffffff;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
   
-          /* On hover, add a black background color with a little bit see-through */
-          .prev:hover,
-          .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-          }
-  
-          /* Number text (1/3 etc) */
-          .numbertext {
-            color: #f2f2f2;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            top: 0;
-          }
-  
-          /* Container for image text */
-          .caption-container {
-            text-align: center;
-            background-color: #222;
-            padding: 2px 16px;
-            color: white;
-          }
-  
-          .row:after {
-            content: "";
-            display: table;
-            clear: both;
-          }
-  
-          /* Six columns side by side */
-          .column {
-            float: left;
-            width: 20%;
-          }
-  
-          /* Add a transparency effect for thumnbail images */
-          .demo {
-            opacity: 0.6;
-          }
-  
-          .active,
-          .demo:hover {
-            opacity: 1;
-          }
-      /* einde slideshow */
+  .button:hover {
+    background-color: #740715;
+  }
 
 }
 
@@ -170,73 +120,51 @@ body {
     }
 
     
-    /* Position the image container (needed to position the left and right arrows) */
+    .column {
+      float: left;
+      width: 32.2%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+    
+    
+    
+    
+    /* Add some shadows to create a card effect */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Some left and right padding inside the container */
     .container {
-        position: relative;
-        width: 45%;
-        top: 1vh;
-        left: 15vw;
+      padding: 0 16px;
     }
-
-    /* Hide the images by default */
-    .mySlides {
-        display: none;
+    
+    /* Clear floats */
+    .container::after, .row::after {
+      content: "";
+      clear: both;
+      display: table;
     }
-
-    /* Add a pointer when hovering over the thumbnail images */
-    .cursor {
-        cursor: pointer;
+    
+    .title {
+      color: rgb(255, 255, 255);
     }
-
-    /* Next & previous buttons */
-    .prev,.next {
-        cursor: pointer;
-        position: absolute;
-        top: 40%;
-        width: auto;
-        padding: 16px;
-        margin-top: -50px;
-        color: white;
-        font-weight: bold;
-        font-size: 20px;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-        -webkit-user-select: none;
+    
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: #ffffff;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
     }
-
-    /* Position the "next button" to the right */
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    /* Number text (1/3 etc) */
-    .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-    }
-
-    /* Container for image text */
-    .caption-container {
-        text-align: center;
-        background-color: #222;
-        padding: 2px 16px;
-        color: white;
-    }
-
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
+    
+    .button:hover {
+      background-color: #740715;
     }
 
     

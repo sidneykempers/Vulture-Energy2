@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+	
+}
+body {
+    background-color:#B8BCBC;
+}
+
+@media screen and (min-width:100px) and (max-width:768.9px) {
+	.item-navbar {
+		display: none;
+	}
+	
+	header {
+		background-color: black;
+	}
+	
+.item-bigscreen {
+  display: none;
+}
+	
+	/*hamburger menu mobile*/
+
+.item-hamburger {
+	font-size: 1.5rem;
+}
+
+.item-hamburger summary {list-style-type: none;}
+.item-hamburger summary {color: #B8BCBC;}
+
+.item-hamburger h1 {position: fixed; right: 5vw; top: 1vh;}
+.item-hamburger ul {z-index: 2;}
+
+.item-navigatie {position: fixed; right: 5vw; top: 10vh;}
+
+.item-navigatie ul { list-style: none; }
+.item-navigatie li {padding: 1vw; background-color:black; list-style: none;}
+.item-navigatie a {text-decoration: none; color: #B8BCBC;}
+
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+.item-foto {
+  height: 200px;
+  width: 95%;
+  position: absolute;
+  left: 2vw;
+  top: 15vh;
+  border: 2px solid black;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.item-tijd {
+  display: none;
+}
+
+
+.item-mobile-info {
+  position: absolute;
+  top: 45vh;
+  left: 30vw;
+text-align: center;
+}
+
+}
+@media screen and (min-width:769px) {
+	
+	.item-hamburger {
+		display: none;
+	}
+	.item-navigatie {
+		display: none;
+	}
+	.item-mobile {
+    display: none;
+  }
+
+  .item-mobile-info {
+    display: none;
+  }
+	
+	/*begin navbar*/
+    header {
+        background-color: black;
+    }
+
+    .item-navbar ul {
+          list-style-type: none;
+        position: absolute;
+        top: 3vh;
+        left: 19vw;
+    }
+
+    .item-navbar li {
+            display: inline;
+          float: left;
+    }
+    .item-navbar li a {
+        font-size: 35px;
+        color: white;
+        text-align: center;
+        padding:20px; 
+        text-decoration: none;
+    }
+    .item-navbar a:hover {
+        color:#740715;
+    }
+
+    .item-logo {
+        margin-left: 5vw;
+        margin-top: -2vh;
+    }  
+	/*einde navbar */
+	
+	.item-foto {
+		position: absolute;
+		left: 26vw; 
+		top: 18vh;
+		height: 400px;
+		width: 750px;
+    border: 2px solid black;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+	}
+    
+    .item-datum {
+        position: absolute;
+        left: 30vw;
+        height: 50vh;
+    }
+
+	
+    
+
+	
+}
